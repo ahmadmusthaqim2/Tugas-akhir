@@ -72,9 +72,7 @@ mov ah,01h
 int 21h
 cmp al,'y'
 jmp proses
-jne error_msg
 
-error_msg
 mov ah,09h
 mov dx,offset error
 int 21h
@@ -125,7 +123,6 @@ cmp bh,'0'
 cmp bl,'8'
 je hasil8
 
-jne error-msg
 
 ;------------------------------------------------------
 hasil1:
